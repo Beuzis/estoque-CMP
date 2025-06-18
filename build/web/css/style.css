@@ -1,0 +1,142 @@
+/* Fundo degradê roxo-azul em toda a página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Container centralizador para o conteúdo */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Títulos mais claros e centralizados */
+h1, h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Navegação (se usar) com links claros e hover vibrante */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #a8c0ff; /* azul clarinho */
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* Formulário com fundo branco e cantos arredondados */
+form {
+    background: #fff;
+    max-width: 400px;
+    margin: 0 auto 40px auto;
+    padding: 30px 35px;
+    box-shadow: 0 8px 20px rgba(101, 52, 255, 0.25);
+    border-radius: 15px;
+    color: #333;
+}
+
+/* Labels com fonte semi-bold e cor escura para contraste */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Inputs com bordas coloridas e sombras sutis */
+form input[type="text"],
+form input[type="password"],
+form input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 2px solid #6a11cb; /* roxo */
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus nos inputs: borda e sombra azul vibrante */
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form input[type="number"]:focus {
+    border-color: #2575fc;
+    outline: none;
+    box-shadow: 0 0 8px #2575fc;
+}
+
+/* Botão grande, azul vibrante, com sombra e efeito hover */
+form input[type="submit"] {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(101, 52, 255, 0.4);
+}
+
+form input[type="submit"]:hover {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    box-shadow: 0 7px 20px rgba(38, 128, 255, 0.7);
+}
+
+/* Mensagem de sucesso ou erro */
+p {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* Links fora do formulário, tipo "voltar" ou navegação */
+a button {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 0 5px 15px rgba(101, 52, 255, 0.4);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+    display: block;
+}
+
+a button:hover {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    box-shadow: 0 7px 20px rgba(38, 128, 255, 0.7);
+}
